@@ -1,0 +1,9 @@
+[submodule "sample-python"]
+	path = sample-python
+	url = git@github.com:dsayling/sample-python.git
+[submodule "sample-maven"]
+	path = sample-maven
+	url = git@github.com:dsayling/sample-maven.git
+[submodule "sample-node"]
+	path = sample-node
+	url = git@github.com:dsayling/sample-node.git
