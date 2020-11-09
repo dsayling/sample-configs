@@ -31,4 +31,4 @@ jobs:
       - checkout
       - run: python run.py
       - store_artifacts:
-          path: sample
+          path: sample/
