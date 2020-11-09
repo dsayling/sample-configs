@@ -1,7 +1,7 @@
 version: 2.1
 
 workflows:
-  gather_configs:
+  gather_configs_cron:
     jobs:
       - gather-configs
     triggers:
@@ -11,11 +11,14 @@ workflows:
           filters:
             branches:
               only:
-                - master
+                - main
+  gather_configs_main:
+    jobs:
+      - gather-configs
 
 
 jobs:
-  build-and-test:
+  gather-configs:
     docker:
       # Be sure to change this to major.minor version of python you need to support.
       - image: cimg/python:3.9
@@ -26,6 +29,6 @@ jobs:
     # CircleCI will report the results back to your VCS provider.
     steps:
       - checkout
-      - python run.py
+      - run: python run.py
       - store_artifacts:
           path: sample
