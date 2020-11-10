@@ -10,3 +10,6 @@
 [submodule "sample-android"]
 	path = sample-android
 	url = git@github.com:dsayling/sample-android.git
+[submodule "sample-dotnet"]
+	path = sample-dotnet
+	url = git@github.com:dsayling/sample-dotnet.git
