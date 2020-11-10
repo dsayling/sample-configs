@@ -7,3 +7,6 @@
 [submodule "sample-node"]
 	path = sample-node
 	url = git@github.com:dsayling/sample-node.git
+[submodule "sample-android"]
+	path = sample-android
+	url = git@github.com:dsayling/sample-android.git
